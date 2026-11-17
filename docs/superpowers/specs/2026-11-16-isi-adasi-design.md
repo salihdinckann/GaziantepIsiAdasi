@@ -58,7 +58,7 @@ Başarı ölçütü: Jüri (Gaziantep Ticaret Odası, HKÜ Teknoloji Transfer Of
 
 Üç katman var. Her katman bir öncekine dayanır ve iddiaları birbirinden ayrı tutulur.
 
-1. **Ölçüm.** Her mahalle için yaz LST'si ve yeşil oranı hesaplanır. Tek bir güne değil, **10–15 bulutsuz yaz gününün medyanına** dayanılır. Günler arası tutarlılık sayıyla verilir (sıra korelasyonu).
+1. **Ölçüm.** Her mahalle için yaz LST'si ve yeşil oranı hesaplanır. Tek bir güne değil, **kentin tamamını gören 7 bulutsuz yaz gününün (Landsat yörünge 174) medyanına** dayanılır. Yörünge 173 şeridinin kenarı kentin ortasından geçtiği için o günler (12 gün) yalnızca tutarlılık kontrolünde, ortak mahalleler üzerinden kullanılır (17 Kasım kararı). Günler arası tutarlılık sayıyla verilir (sıra korelasyonu).
 2. **İlişki.** Mahalleler genelinde yeşil oranı ile LST arasındaki ilişki ölçülür ve **güven aralığıyla** verilir. Kontrol değişkenleri rakım ve merkeze uzaklıktır. Dil şöyle olur: "yeşil oranı yüksek mahalleler ortalamada X °C daha serin *yüzey* sıcaklığına sahip". Nedensellik iddiası yoktur.
 3. **Önceliklendirme.** Şeffaf ağırlıklı bir karar kuralı kullanılır ve **duyarlılık analizi** yapılır. Bu katman "doğru cevap" değil, "şu önceliklere göre şu sıra" der.
 
