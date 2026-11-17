@@ -9,3 +9,4 @@ data/ara/
 
 # Araç çalışma dosyaları
 .superpowers/
+cache/

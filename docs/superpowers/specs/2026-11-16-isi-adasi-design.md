@@ -68,7 +68,7 @@ Başarı ölçütü: Jüri (Gaziantep Ticaret Odası, HKÜ Teknoloji Transfer Of
 |---|---|---|
 | Yüzey sıcaklığı | Landsat 8/9 Collection 2 Level-2 (`landsat-c2-l2`), `lwir11` (ST_B10) | 30 m (termal 100 m'den yeniden örneklenmiş). Kelvin = DN × 0.00341802 + 149.0, sonra °C'ye çevrilir. Bulut/gölge `qa_pixel` ile maskelenir. 2025 Haziran–Ağustos, bulut < %10 → 29 sahne (16 Kasım'da doğrulandı). |
 | Yeşil oranı | Aynı Landsat sahnelerinden NDVI (`red`, `nir08`) **[öneri]** | Aynı gün ve aynı piksel ızgarası kullanıldığı için LST ile tutarlıdır. Sentinel-2 (10 m, `B04`/`B08`) daha ince bir yeşil oranı için isteğe bağlıdır. |
-| Mahalle sınırları | OSM Overpass, `admin_level=8` (Gaziantep'te 745 mahalle) | Resmî değildir. Örnek mahallelerle kontrol edilecek ve posterde "OSM sınırları, resmî değil" diye belirtilecek. Overpass isteğinde User-Agent başlığı zorunludur. |
+| Mahalle sınırları | OSM, Geofabrik Türkiye kopyası (`turkey-latest.osm.pbf`, 17 Kasım 2026), `admin_level=8` → 9 ilçede 745 mahalle | Resmî değildir; posterde "OSM sınırları, resmî değil" diye belirtilecek. Overpass sunucuları 17 Kasım'da aşırı yüklü olduğu için dosya kopyası kullanıldı; bu, kaynağı tarihiyle sabitliyor. Bütün il indirildi; kent odaklı eleme analiz aşamasında yapılacak. |
 | Nüfus | TÜİK ADNKS mahalle nüfusu | **Erişim doğrulanmadı.** Dur/devam kontrolü (c) bunu doğrulayacak. Yaş dağılımı (yaşlı/çocuk) bulunursa eklenecek. |
 | Rakım | Copernicus DEM GLO-30 (`cop-dem-glo-30`, Planetary Computer) **[öneri]** | Kontrol değişkeni. |
 | Hassas noktalar | OSM okul/hastane (`amenity=school/hospital`) **[öneri, isteğe bağlı]** | Mahalle başına sayı. |
