@@ -1,0 +1,11 @@
+# Python sanal ortamı ve önbellekler (her bilgisayarda yeniden oluşturulur)
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Büyük veya yeniden üretilebilir veri: ham indirmeler ve ara çıktılar
+data/ham/
+data/ara/
+
+# Araç çalışma dosyaları
+.superpowers/

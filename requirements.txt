@@ -1,0 +1,25 @@
+# Veri hattı (pipeline) ve testler için gereken paketler.
+# Streamlit uygulamasının kendi, daha hafif listesi app/requirements.txt içinde olacak.
+
+# Uydu görüntüsü (raster) okuma ve işleme
+rasterio
+rioxarray
+
+# Mahalle sınırları gibi vektör (çokgen) verileri
+geopandas
+osmnx
+
+# Planetary Computer uydu kataloğunu sorgulama ve dosya erişim imzası
+pystac-client
+planetary-computer
+
+# İstatistik ve grafik
+pandas
+numpy
+scipy
+statsmodels
+matplotlib
+
+# Uygulama ve testler
+streamlit==1.67.*
+pytest
